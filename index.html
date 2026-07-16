@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Emergency Coordination Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Offline Emergency Coordination Hub</h1>
+        <p>
+            A platform to help communities share emergency information during disasters
+            without relying on internet connectivity.
+        </p>
+    </header>
+
+    <nav>
+
+<a href="#">Home</a>
+
+<a href="#alerts">Emergency Alerts</a>
+
+<a href="#help">Help Requests</a>
+
+<a href="#resources">Resources</a>
+
+<a href="#missing">Missing Persons</a>
+
+</nav>
+
+    <main>
+
+        <section class="card">
+            <h2>Emergency Alerts</h2>
+            <p>Publish and view emergency alerts.</p>
+
+            <a href="#alerts">
+                <button>Open</button>
+            </a>
+        </section>
+
+        <section class="card">
+            <h2>Help Requests</h2>
+            <p>Request emergency assistance.</p>
+
+            <a href="#help">
+                <button>Open</button>
+            </a>
+        </section>
+
+        <section class="card">
+            <h2>Resource Sharing</h2>
+            <p>Share available resources.</p>
+
+            <a href="#resources">
+                <button>Open</button>
+            </a>
+        </section>
+
+        <section class="card">
+            <h2>Missing Persons</h2>
+            <p>Report missing people.</p>
+
+            <a href="#missing">
+                <button>Open</button>
+            </a>
+        </section>
+
+    </main>
+
+    <section id="alerts" class="module">
+
+        <h2>Emergency Alerts</h2>
+<p id="alertCount">Total Alerts: 0</p>
+
+        <input
+            type="text"
+            id="alertTitle"
+            placeholder="Alert Title">
+
+        <input
+            type="text"
+            id="alertLocation"
+            placeholder="Location">
+
+        <select id="alertPriority">
+
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+
+        </select>
+
+        <textarea
+            id="alertDescription"
+            placeholder="Enter alert description"></textarea>
+
+        <button id="publishAlert">
+            Publish Alert
+        </button>
+
+        <div id="alertList"></div>
+
+    </section>
+
+    <section id="help" class="module">
+
+        <h2>Help Requests</h2>
+<p id="helpCount">Total Requests: 0</p>
+
+        <input
+            type="text"
+            id="helpName"
+            placeholder="Name">
+
+        <input
+            type="text"
+            id="helpLocation"
+            placeholder="Location">
+
+        <select id="helpType">
+
+            <option>Food</option>
+            <option>Water</option>
+            <option>Medicine</option>
+            <option>Rescue</option>
+
+        </select>
+
+        <textarea
+            id="helpDescription"
+            placeholder="Describe your request"></textarea>
+
+        <button id="publishHelp">
+            Submit Request
+        </button>
+
+        <div id="helpList"></div>
+
+    </section>
+
+    <section id="resources" class="module">
+
+        <h2>Resource Sharing</h2>
+<p id="resourceCount">Total Resources: 0</p>
+        <input
+            type="text"
+            id="resourceName"
+            placeholder="Resource Name">
+
+        <input
+            type="text"
+            id="resourceLocation"
+            placeholder="Location">
+
+        <input
+            type="text"
+            id="resourceContact"
+            placeholder="Contact Number">
+
+        <textarea
+            id="resourceDescription"
+            placeholder="Describe the resource"></textarea>
+
+        <button id="publishResource">
+            Share Resource
+        </button>
+
+        <div id="resourceList"></div>
+
+    </section>
+
+    <section id="missing" class="module">
+
+        <h2>Missing Persons</h2>
+<p id="missingCount">Total Reports: 0</p>
+
+        <input
+            type="text"
+            id="missingName"
+            placeholder="Person Name">
+
+        <input
+            type="number"
+            id="missingAge"
+            placeholder="Age">
+
+        <input
+            type="text"
+            id="missingLocation"
+            placeholder="Last Seen Location">
+
+        <textarea
+            id="missingDescription"
+            placeholder="Additional Details"></textarea>
+
+        <button id="publishMissing">
+            Submit Report
+        </button>
+
+        <div id="missingList"></div>
+
+    </section>
+
+
+    <footer>
+        <p>Offline Emergency Coordination Hub</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
